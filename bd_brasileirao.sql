@@ -12,6 +12,9 @@ saldo_gol int not null,
 pontuacao int not null
 );
 
+delete from tb_time
+where cd_serie between 1 and 40;
+
 insert into tb_time
 values
 (null, 1, 'Flamengo', 19, 13, 4, 2, 39, 12, 27, 43),
