@@ -40,6 +40,7 @@
             dataVG_tela.Name = "dataVG_tela";
             dataVG_tela.Size = new Size(484, 150);
             dataVG_tela.TabIndex = 0;
+            dataVG_tela.CellContentClick += dataVG_tela_CellContentClick;
             // 
             // btn_list
             // 

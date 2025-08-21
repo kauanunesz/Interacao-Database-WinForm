@@ -10,10 +10,10 @@ namespace TesdeBD
         }
         private void btn_list_Click(object sender, EventArgs e)
         {
-            string conexao = "server=localhost; database=db_usuario;Uid=root; Pwd=root;";
-            string query = "SELECT id, nome, email FROM tb_usuarios";
+            string conexao = "server=localhost; database=bd_brasileirao;Uid=root; Pwd=808801";
+            string query = "SELECT * FROM tb_time";
 
-            using (MySqlConnection con = new MySqlConnection(conexao)) 
+            using (MySqlConnection con = new MySqlConnection(conexao))
             {
                 try
                 {
@@ -23,11 +23,16 @@ namespace TesdeBD
                     da.Fill(dt);
                     dataVG_tela.DataSource = dt;
                 }
-                catch (Exception ex) 
+                catch (Exception ex)
                 {
                     MessageBox.Show("Erro: " + ex.Message);
                 }
             }
+        }
+
+        private void dataVG_tela_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
