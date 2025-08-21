@@ -1,0 +1,27 @@
+# Arquivos de build
+bin/
+obj/
+
+# Configurações locais do Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Logs
+*.log
+
+# Banco de dados locais (SQL Server)
+*.mdf
+*.ldf
+
+# Arquivos de backup
+*.bak
+
+# Arquivos temporários
+*.tmp
+*.temp
+
+# Publicações locais
+publish/
