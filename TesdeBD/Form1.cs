@@ -10,7 +10,7 @@ namespace TesdeBD
         }
         private void btn_list_Click(object sender, EventArgs e)
         {
-            string conexao = "server=localhost; database=bd_brasileirao;Uid=root; Pwd=colocar";
+            string conexao = "server=localhost; database=bd_brasileirao;Uid=root; Pwd=root";
             string query = "SELECT * FROM tb_time";
 
             using (MySqlConnection con = new MySqlConnection(conexao))
